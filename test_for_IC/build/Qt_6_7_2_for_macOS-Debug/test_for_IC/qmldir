@@ -1,0 +1,5 @@
+module test_for_IC
+typeinfo apptest_for_IC.qmltypes
+prefer :/qt/qml/test_for_IC/
+Main 1.0 Main.qml
+
