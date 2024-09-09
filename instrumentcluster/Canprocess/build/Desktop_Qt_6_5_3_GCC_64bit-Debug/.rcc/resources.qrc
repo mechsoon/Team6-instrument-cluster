@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="resources.qrc">/home/seame/Canprocess/resources.qrc</file>
+  </qresource>
+</RCC>
+

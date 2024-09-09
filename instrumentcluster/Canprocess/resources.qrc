@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>framefinal.png</file>
+        <file>needle.png</file>
+    </qresource>
+</RCC>
