@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/new/prefix1">
-        <file>framefinal.png</file>
-        <file>needle.png</file>
-    </qresource>
-</RCC>

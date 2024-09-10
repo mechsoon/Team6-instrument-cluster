@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>Cluster.qml</file>
+        <file>dialcontrol.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>framefinal.png</file>
+        <file>needle.png</file>
+    </qresource>
+</RCC>

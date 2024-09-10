@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Canprocess/">
-    <file alias="Main.qml">/home/seame/Canprocess/Main.qml</file>
-    <file alias="Cluster.qml">/home/seame/Canprocess/Cluster.qml</file>
-    <file alias="resources.qrc">/home/seame/Canprocess/resources.qrc</file>
-  </qresource>
-</RCC>
-
