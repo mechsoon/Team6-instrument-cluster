@@ -26,10 +26,10 @@ public:
     double speed() const; 
 
 signals:
-    void speedChanged();  
+    void speedChanged(int);  
 
 public slots:
-    void updateSpeed(); 
+    void updateSpeed(int); 
 
     
 private:
