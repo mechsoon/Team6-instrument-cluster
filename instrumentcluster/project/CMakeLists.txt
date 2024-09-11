@@ -17,7 +17,7 @@ qt_add_qml_module(appCanprocess
     VERSION 1.0
     QML_FILES
         Main.qml
-        SOURCES receivedata.h receivedata.cpp
+        SOURCES SpeedController.h SpeedController.cpp
         QML_FILES Cluster.qml
         RESOURCES resources.qrc
         RESOURCES
