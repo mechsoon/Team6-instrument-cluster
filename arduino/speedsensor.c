@@ -64,13 +64,12 @@ void loop() {
 
     //unsigned char stmp[8] = {0, 0, 0, 0, 0, 0, 0, 0};
     unsigned char stmp[8] = {0};  // CAN 메시지 데이터 배열 초기화
-    stmp[0] = (rpm >> 24) & 0xFF;  // 상위 8비트
-    stmp[1] = (rpm >> 16) & 0xFF;
-    stmp[2] = (rpm >> 8) & 0xFF;
-    stmp[3] = rpm & 0xFF; 
+    // stmp[0] = (rpm >> 24) & 0xFF;  // 상위 8비트
+    // stmp[1] = (rpm >> 16) & 0xFF;
+    // stmp[2] = (rpm >> 8) & 0xFF;
+    // stmp[3] = rpm & 0xFF; 
+    stmp[0] = rpm  & 0xFF;  // 상위 8비트
 
-
-    stmp[7]++;  // 데이터 증가
 
     // CAN 메시지 전송: ID 0x100, 데이터 길이 8, stmp 데이터
     if (CAN_OK == CAN.sendMsgBuf(0x100, 0, 8, stmp)) {
