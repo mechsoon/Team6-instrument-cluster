@@ -39,10 +39,7 @@ void setup()
 
 }
 
-// //unsigned char stmp[8] = {0, 0, 0, 0, 0, 0, 0, 0};
-// unsigned char stmp[8] = {0};  // CAN 메시지 데이터 배열 초기화
 
-// int 값을 바이트로 변환하여 stmp 배열에 저장
 
 void loop() {
     if (millis() - timeold >= 1000){  /*Uptade every one second, this will be equal to reading frecuency (Hz).*/
