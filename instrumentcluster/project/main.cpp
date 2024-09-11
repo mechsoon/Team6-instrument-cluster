@@ -1,13 +1,15 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include "SpeedController.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-
+    SpeedController speedController;
+    engine.rootContext()->setContextProperty("speedController", &speedController);
     // 메인 QML 파일 경로 설정
     const QUrl url(u"qrc:/Main.qml"_qs);
 

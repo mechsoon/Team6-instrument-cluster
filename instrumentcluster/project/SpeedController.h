@@ -5,10 +5,14 @@
 #include <linux/can.h>
 #include <linux/can/raw.h>
 #include <sys/socket.h>
+#include <linux/can.h>
+#include <linux/can/raw.h>
 #include <net/if.h>
+#include <sys/ioctl.h>
 #include <cstring>
 #include <iostream>
-#include <QTimer> 
+#include <QTimer>
+#include <unistd.h>
 
 class SpeedController : public QObject
 {

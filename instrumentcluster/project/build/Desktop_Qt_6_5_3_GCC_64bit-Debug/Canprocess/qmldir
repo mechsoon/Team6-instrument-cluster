@@ -1,0 +1,6 @@
+module Canprocess
+typeinfo appCanprocess.qmltypes
+prefer :/qt/qml/Canprocess/
+Main 1.0 Main.qml
+Cluster 1.0 Cluster.qml
+

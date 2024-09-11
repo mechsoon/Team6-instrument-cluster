@@ -50,7 +50,7 @@ void SpeedController::updateSpeed()
 
     if (nbytes > 0 && frame.can_id == 0x100) {
 
-        int speed = frame.data[0]
+        int speed = frame.data[0];
 
         if (m_speed != speed) {
             m_speed = speed;
