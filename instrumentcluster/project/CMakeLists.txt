@@ -18,7 +18,7 @@ qt_add_qml_module(appCanprocess
     QML_FILES
         Main.qml
         SOURCES SpeedController.h SpeedController.cpp
-        QML_FILES Cluster.qml
+        QML_FILES Cluster.qml 
         RESOURCES resources.qrc
         RESOURCES
 
@@ -28,8 +28,9 @@ qt_add_resources(appCanprocess "resources"
     FILES
         Main.qml
         Cluster.qml
-        framefinal.png
+        framefffinal.png
         needle.png
+        needle_battery.png
 
         
 )

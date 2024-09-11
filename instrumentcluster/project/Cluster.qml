@@ -9,20 +9,16 @@ Item {
 
     width: 788; height: 400
 
+    SpeedController {
+        id: speedController
+        onSpeedChanged: {
+ 
+            updateSpeed(speedController.speed);
+        }
+    }
+
     Image { source: "qrc:/framefffinal.png" }
 
-//! [needle_shadow]
-    // Image {
-    //     x: 96
-    //     y: 35
-    //     source: "needle_shadow.png"
-    //     transform: Rotation {
-    //         origin.x: 9; origin.y: 67
-    //         angle: needleRotation.angle
-    //     }
-    // }
-//! [needle_shadow]
-//! [needle]
     Image {
         id: needle
         x: 64; y: 190
@@ -31,7 +27,6 @@ Item {
         transform: Rotation {
             id: needleRotation
             origin.x: 115; origin.y: 5
-            //! [needle angle]
             angle: Math.min(-28, 208)
             Behavior on angle {
                 SpringAnimation {
@@ -43,7 +38,6 @@ Item {
                     easing.type: Easing.InOutQuad  // 부드러운 애니메이션
                 }
             }
-            //! [needle angle]
         }
     }
 
@@ -55,8 +49,6 @@ Item {
         transform: Rotation {
             id: needleRotation_battery
             origin.x: 80; origin.y: 3.5
-            //! [needle angle]
-            // angle: Math.max(-148, -32)
             angle: Math.max(-148, -32)
             Behavior on angle {
                 SpringAnimation {
@@ -68,11 +60,19 @@ Item {
                     easing.type: Easing.InOutQuad  // 부드러운 애니메이션
                 }
             }
-            //! [needle angle]
+        
         }
     }
-//! [needle]
-//! [overlay]
-    // Image { x: 21; y: 18; source: "overlay.png" }
-//! [overlay]
+    function updateSpeed(newSpeed) {
+
+        var maxSpeed = 180  
+
+        var minAngle = -28  
+        var maxAngle = 208   
+        var newAngle = minAngle + (newSpeed / maxSpeed) * (maxAngle - minAngle)
+        needleRotation.angle = newAngle 
+    }
+
+
+
 }

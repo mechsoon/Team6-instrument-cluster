@@ -26,6 +26,8 @@ signals:
 
 public slots:
     void updateSpeed(); 
+
+    
 private:
     int canSocket;
     double m_speed;  
