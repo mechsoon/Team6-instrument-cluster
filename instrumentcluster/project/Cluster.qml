@@ -9,7 +9,7 @@ Item {
 
     width: 788; height: 400
 
-    Image { source: "qrc:/framefinal.png" }
+    Image { source: "qrc:/framefffinal.png" }
 
 //! [needle_shadow]
     // Image {
@@ -37,6 +37,35 @@ Item {
                 SpringAnimation {
                     spring: 1.4
                     damping: .15
+                }
+                NumberAnimation {
+                    duration: 700  // 1초 동안
+                    easing.type: Easing.InOutQuad  // 부드러운 애니메이션
+                }
+            }
+            //! [needle angle]
+        }
+    }
+
+    Image {
+        id: needle_battery
+        x: 104; y: 250
+        antialiasing: true
+        source: "qrc:/needle_battery.png"
+        transform: Rotation {
+            id: needleRotation_battery
+            origin.x: 80; origin.y: 3.5
+            //! [needle angle]
+            // angle: Math.max(-148, -32)
+            angle: Math.max(-148, -32)
+            Behavior on angle {
+                SpringAnimation {
+                    spring: 1.4
+                    damping: .15
+                }
+                NumberAnimation {
+                    duration: 700  // 1초 동안
+                    easing.type: Easing.InOutQuad  // 부드러운 애니메이션
                 }
             }
             //! [needle angle]
