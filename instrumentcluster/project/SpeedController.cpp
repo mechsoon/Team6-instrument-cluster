@@ -4,7 +4,7 @@ SpeedController::SpeedController(QObject *parent)
     : QObject(parent), m_speed(0) , canSocket(-1)
 {
     setupCanInterface();
-    timer=new Qtimer(this);
+    timer=new QTimer(this);
     connect(timer, &QTimer::timeout, this, &SpeedController::updateSpeed);
     timer->start(100);  
 }
