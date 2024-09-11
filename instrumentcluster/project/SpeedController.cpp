@@ -44,6 +44,8 @@ void SpeedController::setupCanInterface()
 
     if (bind(canSocket, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
         std::cerr << "Error in socket bind" << std::endl;
+        close(canSocket);
+        canSocket=-1;
         return;
     }
 }
@@ -52,7 +54,10 @@ void SpeedController::updateSpeed()
 {
     struct can_frame frame;
     int nbytes = read(canSocket, &frame, sizeof(struct can_frame));
-
+    if (nbytes < 0) {
+        std::cerr << "Error reading from CAN socket" << std::endl;
+        return;
+    }
     if (nbytes > 0 && frame.can_id == 0x100) {
 
         int speed = frame.data[0];
