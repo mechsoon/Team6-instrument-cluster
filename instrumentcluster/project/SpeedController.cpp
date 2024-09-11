@@ -1,12 +1,13 @@
 #include "SpeedController.h"
 
 SpeedController::SpeedController(QObject *parent)
-    : QObject(parent), m_speed(0) , canSocket(-1)
+    : QObject(parent), m_speed(-28) , canSocket(-1)
 {
     setupCanInterface();
     timer=new QTimer(this);
     connect(timer, &QTimer::timeout, this, &SpeedController::updateSpeed);
     timer->start(100);  
+    qDebug() << "Timer started, updating every 100ms";
 }
 
 SpeedController::~SpeedController() {
@@ -61,7 +62,7 @@ void SpeedController::updateSpeed()
     if (nbytes > 0 && frame.can_id == 0x100) {
 
         int speed = frame.data[0];
-
+        qDebug() << "Received speed:" << speed;
         if (m_speed != speed) {
             m_speed = speed;
             emit speedChanged();  

@@ -1,7 +1,9 @@
 /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/appCanprocess_autogen/EWIEGA46WW/moc_SpeedController.cpp: /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/SpeedController.h \
   /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/appCanprocess_autogen/moc_predefs.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
@@ -27,8 +29,10 @@
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qcontainerfwd.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
@@ -37,6 +41,7 @@
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
@@ -44,6 +49,7 @@
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
@@ -60,9 +66,15 @@
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h \
@@ -79,6 +91,7 @@
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h \
@@ -91,6 +104,7 @@
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
   /usr/include/alloca.h \
@@ -267,10 +281,12 @@
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
+  /usr/include/limits.h \
   /usr/include/linux/can.h \
   /usr/include/linux/can/raw.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/ioctl.h \
+  /usr/include/linux/limits.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/socket.h \
   /usr/include/linux/stddef.h \
@@ -312,8 +328,11 @@
   /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
   /usr/include/x86_64-linux-gnu/bits/ioctls.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -363,12 +382,14 @@
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

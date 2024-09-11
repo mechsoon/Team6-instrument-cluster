@@ -12,10 +12,24 @@ Item {
 
     SpeedController {
         id: speedController
-        onSpeedChanged: {
- 
-            qupdateSpeed(speedController.speed);
+    }
+    Connections {
+        target: speedController
+        function onSpeedChanged() {
+            console.log("Speed changed to:", speedController.speed);
+            updateSpeed(speedController.speed);
         }
+    }
+
+
+    function updateSpeed(newSpeed) {
+
+        var maxSpeed = 180
+
+        var minAngle = -28
+        var maxAngle = 208
+        var newAngle = minAngle + (newSpeed / maxSpeed) * (maxAngle - minAngle)
+        needleRotation.angle = newAngle
     }
 
     Image { source: "qrc:/framefffinal.png" }
@@ -28,7 +42,7 @@ Item {
         transform: Rotation {
             id: needleRotation
             origin.x: 115; origin.y: 5
-            angle: Math.min(-28, 208)
+            angle: -28
             Behavior on angle {
                 SpringAnimation {
                     spring: 1.4
@@ -63,15 +77,6 @@ Item {
             }
         
         }
-    }
-    function qupdateSpeed(newSpeed) {
-
-        var maxSpeed = 180  
-
-        var minAngle = -28  
-        var maxAngle = 208   
-        var newAngle = minAngle + (newSpeed / maxSpeed) * (maxAngle - minAngle)
-        needleRotation.angle = newAngle 
     }
 
 

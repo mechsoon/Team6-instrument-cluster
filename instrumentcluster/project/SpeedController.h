@@ -13,6 +13,7 @@
 #include <iostream>
 #include <QTimer>
 #include <unistd.h>
+#include <QDebug>
 
 class SpeedController : public QObject
 {
