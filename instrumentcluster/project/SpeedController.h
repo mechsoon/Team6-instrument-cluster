@@ -1,5 +1,3 @@
-// SpeedController.h
-
 #ifndef SPEEDCONTROLLER_H
 #define SPEEDCONTROLLER_H
 
