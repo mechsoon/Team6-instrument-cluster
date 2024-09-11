@@ -8,8 +8,10 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    SpeedController speedController;
-    engine.rootContext()->setContextProperty("speedController", &speedController);
+    // SpeedController speedController;
+    // engine.rootContext()->setContextProperty("speedController", &speedController);
+
+    qmlRegisterType<SpeedController>("com.example.speedcontroller", 1, 0, "SpeedController");
     // 메인 QML 파일 경로 설정
     const QUrl url(u"qrc:/Main.qml"_qs);
 
