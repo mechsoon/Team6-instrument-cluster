@@ -28,7 +28,6 @@ qt_add_resources(appCanprocess "resources"
     FILES
         Main.qml
         Cluster.qml
-        dialcontrol.qml
         framefinal.png
         needle.png
 
