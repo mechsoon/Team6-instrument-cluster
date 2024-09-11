@@ -4,7 +4,7 @@ SpeedController::SpeedController(QObject *parent)
     : QObject(parent), m_speed(0) , canSocket(-1)
 {
     setupCanInterface();
-
+    timer=new Qtimer(this);
     connect(timer, &QTimer::timeout, this, &SpeedController::updateSpeed);
     timer->start(100);  
 }
@@ -31,7 +31,12 @@ void SpeedController::setupCanInterface()
     }
 
     std::strcpy(ifr.ifr_name, "can0");
-    ioctl(canSocket, SIOCGIFINDEX, &ifr);
+    if (ioctl(canSocket, SIOCGIFINDEX, &ifr) < 0) {
+        std::cerr << "Error in ioctl" << std::endl;
+        close(canSocket);  // 오류 시 소켓 닫기
+        canSocket = -1;
+        return;
+    }
 
     std::memset(&addr, 0, sizeof(addr));
     addr.can_family = AF_CAN;
