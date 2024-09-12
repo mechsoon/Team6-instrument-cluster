@@ -20,7 +20,7 @@ Item {
             target: speedController  // speedController와 시그널 연결
             onSpeedChanged: {
                 console.log("Speed changed to: " + speedController.speed);
-                needleRotation.angle=speedController.speed; // 속도에 따라 각도 변경
+                needleRotation.angle=speedController.speed-28; // 속도에 따라 각도 변경
             }
         }
 
