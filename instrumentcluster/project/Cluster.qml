@@ -10,19 +10,15 @@ Item {
 
     width: 788; height: 400
 
-    SpeedController {
-        id: speedController
-    }
-    Connections {
-        target: speedController
-        function onSpeedChanged() {
+    
+    onSpeedChanged :{
             console.log("Speed changed to:", speedController.speed);
-            updateSpeed(speedController.speed);
+            changeSpeed(speedController.speed);
         }
-    }
 
 
-    function updateSpeed(newSpeed) {
+
+    function changeSpeed(newSpeed) {
 
         var maxSpeed = 180
 

@@ -60,8 +60,8 @@ void SpeedController::updateSpeed()
         return;
     }
     if (nbytes > 0 && frame.can_id == 0x100) {
-
-        int speed = frame.data[0];
+        
+        double speed = frame.data[0];
         qDebug() << "Received speed:" << speed;
         if (m_speed != speed) {
             m_speed = speed;

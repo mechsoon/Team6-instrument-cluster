@@ -15,7 +15,7 @@ Item {
     }
     Connections {
         target: speedController
-        function onSpeedChanged() {
+        onSpeedChanged :{
             console.log("Speed changed to:", speedController.speed);
             updateSpeed(speedController.speed);
         }
