@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QTcpSocket>
 #include <QTcpServer>
+#include <QTimer>
 
 class Battery: public QObject
 {
@@ -23,6 +24,7 @@ public slots:
 private:
     QTcpServer *server;
     int m_battery;
+    QTimer *timer;
 };
 
 #endif // BATTERY_H

@@ -1,0 +1,47 @@
+{
+    "classes": [
+        {
+            "className": "Battery",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "battery",
+                    "notify": "batteryChanged",
+                    "read": "battery",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "Battery",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "batteryChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "name": "onNewConnection",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "battery.h",
+    "outputRevision": 68
+}

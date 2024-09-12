@@ -11,8 +11,8 @@ int main(int argc, char *argv[])
     SpeedController speedController;
     engine.rootContext()->setContextProperty("speedController", &speedController);
 
-
     // 메인 QML 파일 경로 설정
+
     const QUrl url(u"qrc:/Main.qml"_qs);
 
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
