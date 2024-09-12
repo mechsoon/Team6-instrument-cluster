@@ -5,9 +5,10 @@ SpeedController::SpeedController(QObject *parent)
 {
     setupCanInterface();
     timer=new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &SpeedController::updateSpeed);
-    timer->start(100);  
+    timer->start(100);
     qDebug() << "Timer started, updating every 100ms";
+    connect(timer, &QTimer::timeout, this, &SpeedController::updateSpeed);
+
 }
 
 SpeedController::~SpeedController() {
@@ -53,6 +54,7 @@ void SpeedController::setupCanInterface()
 
 void SpeedController::updateSpeed()
 {
+    qDebug() << "updateSpeed() called";
     struct can_frame frame;
     int nbytes = read(canSocket, &frame, sizeof(struct can_frame));
     if (nbytes < 0) {

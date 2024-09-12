@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
 
 import QtQuick
-import com.example.speedcontroller 1.0
+
 
 Item {
     id: root
@@ -11,22 +11,29 @@ Item {
     width: 788; height: 400
 
     
-    onSpeedChanged :{
-            console.log("Speed changed to:", speedController.speed);
-            changeSpeed(speedController.speed);
+    // onSpeedChanged :{
+    //         console.log("Speed changed to:", speedController.speed);
+    //         // changeSpeed(speedController.speed);
+    //         needleRotation.angle=speedController.speed;
+    //     }
+    Connections {
+            target: speedController  // speedController와 시그널 연결
+            onSpeedChanged: {
+                console.log("Speed changed to: " + speedController.speed);
+                needleRotation.angle=speedController.speed; // 속도에 따라 각도 변경
+            }
         }
 
+    // function changeSpeed(newSpeed) {
 
+    //     var maxSpeed = 180
 
-    function changeSpeed(newSpeed) {
+    //     var minAngle = -28
+    //     var maxAngle = 208
+    //     var newAngle = minAngle + (newSpeed / maxSpeed) * (maxAngle - minAngle)
+    //     needleRotation.angle = newAngle
+    // }
 
-        var maxSpeed = 180
-
-        var minAngle = -28
-        var maxAngle = 208
-        var newAngle = minAngle + (newSpeed / maxSpeed) * (maxAngle - minAngle)
-        needleRotation.angle = newAngle
-    }
 
     Image { source: "qrc:/framefffinal.png" }
 
