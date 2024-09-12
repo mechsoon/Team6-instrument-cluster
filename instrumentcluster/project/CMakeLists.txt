@@ -21,6 +21,7 @@ qt_add_qml_module(appCanprocess
         QML_FILES Cluster.qml 
         RESOURCES resources.qrc
         RESOURCES
+        SOURCES battery.h battery.cpp
 
 )
 qt_add_resources(appCanprocess "resources"
