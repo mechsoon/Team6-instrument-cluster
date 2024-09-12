@@ -11,28 +11,20 @@ Item {
     width: 788; height: 400
 
     
-    // onSpeedChanged :{
-    //         console.log("Speed changed to:", speedController.speed);
-    //         // changeSpeed(speedController.speed);
-    //         needleRotation.angle=speedController.speed;
-    //     }
+
     Connections {
-            target: speedController  // speedController와 시그널 연결
+            target: speedController
             onSpeedChanged: {
                 console.log("Speed changed to: " + speedController.speed);
-                needleRotation.angle=speedController.speed-28; // 속도에 따라 각도 변경
+                needleRotation.angle=speedController.speed-28;
             }
         }
-
-    // function changeSpeed(newSpeed) {
-
-    //     var maxSpeed = 180
-
-    //     var minAngle = -28
-    //     var maxAngle = 208
-    //     var newAngle = minAngle + (newSpeed / maxSpeed) * (maxAngle - minAngle)
-    //     needleRotation.angle = newAngle
-    // }
+    Connections {
+            target: battery  // speedController와 시그널 연결
+            onBatteryChanged: {
+                console.log("Speed changed to: " + battery.battery);
+                needleRotation_battery.angle=battery.battery;
+        }
 
 
     Image { source: "qrc:/framefffinal.png" }
@@ -52,7 +44,7 @@ Item {
                     damping: .15
                 }
                 NumberAnimation {
-                    duration: 100  // 1초 동안
+                    duration: 100
                     easing.type: Easing.InOutQuad  // 부드러운 애니메이션
                 }
             }
@@ -74,7 +66,7 @@ Item {
                     damping: .15
                 }
                 NumberAnimation {
-                    duration: 700  // 1초 동안
+                    duration: 500
                     easing.type: Easing.InOutQuad  // 부드러운 애니메이션
                 }
             }
