@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include "SpeedController.h"
+#include "battery.h"
 
 int main(int argc, char *argv[])
 {
@@ -9,7 +10,9 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     SpeedController speedController;
+    Battery battery;
     engine.rootContext()->setContextProperty("speedController", &speedController);
+    engine.rootContext()->setContextProperty("battery", &battery);
 
     // 메인 QML 파일 경로 설정
 
