@@ -52,7 +52,7 @@ Item {
                     damping: .15
                 }
                 NumberAnimation {
-                    duration: 700  // 1초 동안
+                    duration: 100  // 1초 동안
                     easing.type: Easing.InOutQuad  // 부드러운 애니메이션
                 }
             }

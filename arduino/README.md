@@ -8,3 +8,6 @@
 3. when you failed(tx and rx pin on your Arduino would be not blinking.),check your oscillation and CAN SetMode depends on your Shield. 
 
 4. match bitrate between raspberry pi and Arduino is also important.
+
+
+[]
