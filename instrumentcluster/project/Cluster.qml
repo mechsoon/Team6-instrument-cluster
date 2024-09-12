@@ -61,16 +61,16 @@ Item {
             id: needleRotation_battery
             origin.x: 80; origin.y: 3.5
             angle: -32
-            Behavior on angle {
-                SpringAnimation {
-                    spring: 1.4
-                    damping: .15
-                }
-                NumberAnimation {
-                    duration: 500
-                    easing.type: Easing.InOutQuad
-                }
-            }
+        //     Behavior on angle {
+        //         SpringAnimation {
+        //             spring: 1.4
+        //             damping: .15
+        //         }
+        //         NumberAnimation {
+        //             duration: 500
+        //             easing.type: Easing.InOutQuad
+        //         }
+        //     }
         
         }
     }
