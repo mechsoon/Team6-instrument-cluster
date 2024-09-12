@@ -12,8 +12,8 @@ Battery::Battery(QObject *parent)
         qDebug() << "Server started!";
     }
 
-    connect(server, &QTcpServer::newConnection, this, &Battery::onNewConnection);
-
+    bool check=connect(server, &QTcpServer::newConnection, this, &Battery::onNewConnection);
+    qDebug()<<check;
 
 }
 
