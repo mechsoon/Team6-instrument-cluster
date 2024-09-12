@@ -1,18 +1,17 @@
 #include "battery.h"
 
 Battery::Battery(QObject *parent)
-    : QObject(parent)
+    : QObject(parent),m_battery(0)
 {
     server=new QTcpServer(this);
-    timer=new QTimer(this);
-    timer->start(5000);
+
     if (!server->listen(QHostAddress::LocalHost, 12345)) {
         qDebug() << "Server could not start!";
     } else {
+
         qDebug() << "Server started!";
     }
 
-    connect(timer, &QTimer::timeout, server, &QTcpServer::newConnection);
     connect(server, &QTcpServer::newConnection, this, &Battery::onNewConnection);
 
 
@@ -32,6 +31,6 @@ void Battery::onNewConnection(){
 
 Battery::~Battery(){}
 
-int Battery::battery(){
+int Battery::level(){
     return m_battery;
 }
