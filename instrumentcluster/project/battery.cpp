@@ -31,6 +31,6 @@ void Battery::onNewConnection(){
 
 Battery::~Battery(){}
 
-int Battery::level(){
+double Battery::battery(){
     return m_battery;
 }

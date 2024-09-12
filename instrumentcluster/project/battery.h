@@ -9,11 +9,11 @@
 class Battery: public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(int level READ level NOTIFY batteryChanged)
+    Q_PROPERTY(double battery READ battery NOTIFY batteryChanged)
 public:
     explicit Battery(QObject *parent = nullptr);
     ~Battery();
-    int level();
+    double battery();
 
 signals:
     void batteryChanged();
@@ -23,7 +23,7 @@ public slots:
 
 private:
     QTcpServer *server;
-    int m_battery;
+    double m_battery;
     QTimer *timer;
 };
 
