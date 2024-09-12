@@ -12,6 +12,7 @@ class Battery: public QObject
 public:
     explicit Battery(QObject *parent = nullptr);
     ~Battery();
+    int battery();
 
 signals:
     void batteryChanged();
@@ -21,6 +22,7 @@ public slots:
 
 private:
     QTcpServer *server;
+    int m_battery;
 };
 
 #endif // BATTERY_H

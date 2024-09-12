@@ -21,3 +21,7 @@ void Battery::onNewConnection(){
         qDebug() << "Received integer:" << receivedInt;
     });
 }
+
+int Battery::battery(){
+    return m_battery;
+}
