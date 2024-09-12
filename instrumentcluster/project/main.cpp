@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     SpeedController speedController;
     Battery battery;
     engine.rootContext()->setContextProperty("speedController", &speedController);
-    engine.rootContext()->setContextProperty("battery", &battery);
+    engine.rootContext()->setContextProperty("batterylevel", &battery);
 
     // 메인 QML 파일 경로 설정
 

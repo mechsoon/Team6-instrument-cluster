@@ -1,5 +1,6 @@
 /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/appCanprocess_autogen/EWIEGA46WW/moc_battery.cpp: /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/battery.h \
   /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/appCanprocess_autogen/moc_predefs.h \
+  /home/seame/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
   /home/seame/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \

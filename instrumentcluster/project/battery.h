@@ -5,15 +5,15 @@
 #include <QTcpSocket>
 #include <QTcpServer>
 #include <QTimer>
-
+#include <QDebug>
 class Battery: public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(int battery READ battery NOTIFY batteryChanged)
+    Q_PROPERTY(int level READ level NOTIFY batteryChanged)
 public:
     explicit Battery(QObject *parent = nullptr);
     ~Battery();
-    int battery();
+    int level();
 
 signals:
     void batteryChanged();

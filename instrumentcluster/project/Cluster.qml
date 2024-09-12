@@ -20,10 +20,11 @@ Item {
             }
         }
     Connections {
-            target: battery  // speedController와 시그널 연결
+            target: batterylevel
             onBatteryChanged: {
-                console.log("Speed changed to: " + battery.battery);
-                needleRotation_battery.angle=battery.battery;
+                console.log("Battery changed to: " + batterylevel.level);
+                needleRotation_battery.angle=((batterylevel.level) * (-1.16)) - 32;
+            }
         }
 
 
@@ -45,7 +46,7 @@ Item {
                 }
                 NumberAnimation {
                     duration: 100
-                    easing.type: Easing.InOutQuad  // 부드러운 애니메이션
+                    easing.type: Easing.InOutQuad
                 }
             }
         }
@@ -59,7 +60,7 @@ Item {
         transform: Rotation {
             id: needleRotation_battery
             origin.x: 80; origin.y: 3.5
-            angle: Math.max(-148, -32)
+            angle: -32
             Behavior on angle {
                 SpringAnimation {
                     spring: 1.4
@@ -67,7 +68,7 @@ Item {
                 }
                 NumberAnimation {
                     duration: 500
-                    easing.type: Easing.InOutQuad  // 부드러운 애니메이션
+                    easing.type: Easing.InOutQuad
                 }
             }
         
@@ -77,3 +78,4 @@ Item {
 
 
 }
+

@@ -42,7 +42,7 @@ static constexpr auto qt_meta_stringdata_CLASSBatteryENDCLASS = QtMocHelpers::st
     "batteryChanged",
     "",
     "onNewConnection",
-    "battery"
+    "level"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSBatteryENDCLASS_t {
@@ -51,7 +51,7 @@ struct qt_meta_stringdata_CLASSBatteryENDCLASS_t {
     char stringdata1[15];
     char stringdata2[1];
     char stringdata3[16];
-    char stringdata4[8];
+    char stringdata4[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSBatteryENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -61,13 +61,13 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSBatteryENDCLASS_t qt_meta_strin
         QT_MOC_LITERAL(8, 14),  // "batteryChanged"
         QT_MOC_LITERAL(23, 0),  // ""
         QT_MOC_LITERAL(24, 15),  // "onNewConnection"
-        QT_MOC_LITERAL(40, 7)   // "battery"
+        QT_MOC_LITERAL(40, 5)   // "level"
     },
     "Battery",
     "batteryChanged",
     "",
     "onNewConnection",
-    "battery"
+    "level"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -111,7 +111,7 @@ Q_CONSTINIT const QMetaObject Battery::staticMetaObject = { {
     qt_static_metacall,
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSBatteryENDCLASS_t,
-        // property 'battery'
+        // property 'level'
         QtPrivate::TypeAndForceComplete<int, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Battery, std::true_type>,
@@ -147,7 +147,7 @@ void Battery::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         (void)_t;
         void *_v = _a[0];
         switch (_id) {
-        case 0: *reinterpret_cast< int*>(_v) = _t->battery(); break;
+        case 0: *reinterpret_cast< int*>(_v) = _t->level(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
