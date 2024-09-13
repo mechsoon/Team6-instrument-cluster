@@ -61,9 +61,8 @@ void SpeedController::updateSpeed()
         std::cerr << "Error reading from CAN socket" << std::endl;
         return;
     }
-    if (nbytes > 0 && frame.can_id == 0x100) {
-        
-        double speed = frame.data[0];
+    if (nbytes > 0 && frame.can_id == 0x100) { 
+        double speed = (frame.data[0]<<8)|frame.data[1];
         qDebug() << "Received speed:" << speed;
         if (m_speed != speed) {
             m_speed = speed;
