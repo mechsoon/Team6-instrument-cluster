@@ -4,8 +4,9 @@ import QtQuick.Window 2.15
 
 ApplicationWindow {
     visible: true
-    width: 1280
-    height: 400
+    //width: 1280
+    //height: 400
+    visibility: Window.FullScreen 
     title: "Dial Application"
     color : "black"
 
