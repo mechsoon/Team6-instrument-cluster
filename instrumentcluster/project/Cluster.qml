@@ -22,8 +22,8 @@ Item {
             target: batterylevel
             onBatteryChanged: {
                 console.log("Battery changed to: " + batterylevel.level);
-                // needleRotation_battery.angle=((batterylevel.battery) * (-1.16)) - 32;
-                needleRotation_battery.angle=batterylevel.level
+                needleRotation_battery.angle=((batterylevel.battery) * (-1.16)) - 32;
+                // needleRotation_battery.angle=batterylevel.level
             }
         }
 
