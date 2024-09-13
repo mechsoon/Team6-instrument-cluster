@@ -15,7 +15,6 @@ Item {
     Connections {
             target: speedController
             onSpeedChanged: {
-                console.log("Speed changed to: " + speedController.speed);
                 needleRotation.angle=speedController.speed-28;
             }
         }
