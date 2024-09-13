@@ -64,7 +64,7 @@ Item {
             Behavior on angle {
                 SpringAnimation {
                     spring: 1.4
-                    damping: .15
+                    damping: .5
                  }
                 NumberAnimation {
                     duration: 100
