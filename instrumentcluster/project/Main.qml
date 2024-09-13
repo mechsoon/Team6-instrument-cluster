@@ -6,7 +6,7 @@ ApplicationWindow {
     visible: true
     //width: 1280
     //height: 400
-    visibility: Window.FullScreen 
+    visibility: Window.FullScreen
     title: "Dial Application"
     color : "black"
 
