@@ -22,7 +22,7 @@ Item {
             target: batterylevel
             onBatteryChanged: {
                 console.log("Battery changed to: " + batterylevel.level);
-                needleRotation_battery.angle=((batterylevel.battery) * (-1.16)) - 32;
+                needleRotation_battery.angle=((batterylevel.level) * (-1.16)) - 32;
                 // needleRotation_battery.angle=batterylevel.level
             }
         }
@@ -67,7 +67,7 @@ Item {
                     damping: .15
                  }
                 NumberAnimation {
-                    duration: 500
+                    duration: 100
                     easing.type: Easing.InOutQuad
                 }
             }

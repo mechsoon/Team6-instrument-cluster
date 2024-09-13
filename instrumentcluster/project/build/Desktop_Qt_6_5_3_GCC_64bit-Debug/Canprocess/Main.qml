@@ -20,16 +20,16 @@ ApplicationWindow {
         id: dial
         anchors.centerIn: parent
         value: 0
-    }
+
         //! [the dial in use]
 
         // QuitButton
-        // Button {
-        //     text: "Quit"
-        //     anchors.right: parent.right
-        //     anchors.top: parent.top
-        //     anchors.margins: 10
-        //     onClicked: Qt.quit()
-        // }
-    // }
+        Button {
+            text: "Quit"
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.margins: 10
+            onClicked: Qt.quit()
+        }
+    }
 }
