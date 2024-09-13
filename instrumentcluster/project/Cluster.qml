@@ -21,9 +21,9 @@ Item {
     Connections {
             target: batterylevel
             onBatteryChanged: {
-                console.log("Battery changed to: " + batterylevel.battery);
+                console.log("Battery changed to: " + batterylevel.level);
                 // needleRotation_battery.angle=((batterylevel.battery) * (-1.16)) - 32;
-                needleRotation_battery.angle=batterylevel.battery
+                needleRotation_battery.angle=batterylevel.level
             }
         }
 
@@ -61,19 +61,20 @@ Item {
             id: needleRotation_battery
             origin.x: 80; origin.y: 3.5
             angle: -32
-             Behavior on angle {
-                springAnimation {
+            Behavior on angle {
+                SpringAnimation {
                     spring: 1.4
                     damping: .15
-                 
+                 }
                 NumberAnimation {
                     duration: 500
                     easing.type: Easing.InOutQuad
                 }
-             }
+            }
         
         }
     }
+
 
 
 

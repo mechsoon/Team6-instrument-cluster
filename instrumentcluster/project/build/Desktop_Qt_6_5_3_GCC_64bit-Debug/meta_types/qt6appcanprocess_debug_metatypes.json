@@ -63,7 +63,7 @@
                         "required": false,
                         "scriptable": true,
                         "stored": true,
-                        "type": "int",
+                        "type": "double",
                         "user": false
                     }
                 ],

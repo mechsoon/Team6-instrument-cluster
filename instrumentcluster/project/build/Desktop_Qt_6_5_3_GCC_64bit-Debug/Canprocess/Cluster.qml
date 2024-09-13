@@ -15,15 +15,15 @@ Item {
     Connections {
             target: speedController
             onSpeedChanged: {
-                console.log("Speed changed to: " + speedController.speed);
                 needleRotation.angle=speedController.speed-28;
             }
         }
     Connections {
             target: batterylevel
             onBatteryChanged: {
-                console.log("Speed changed to: " + batterylevel.level);
-                needleRotation_battery.angle=batterylevel.level;
+                console.log("Battery changed to: " + batterylevel.level);
+                // needleRotation_battery.angle=((batterylevel.battery) * (-1.16)) - 32;
+                needleRotation_battery.angle=batterylevel.level
             }
         }
 
@@ -65,7 +65,7 @@ Item {
                 SpringAnimation {
                     spring: 1.4
                     damping: .15
-                }
+                 }
                 NumberAnimation {
                     duration: 500
                     easing.type: Easing.InOutQuad
@@ -74,6 +74,7 @@ Item {
         
         }
     }
+
 
 
 

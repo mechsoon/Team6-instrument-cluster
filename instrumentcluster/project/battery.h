@@ -9,11 +9,11 @@
 class Battery: public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(double battery READ battery NOTIFY batteryChanged)
+    Q_PROPERTY(double level READ level NOTIFY batteryChanged)
 public:
     explicit Battery(QObject *parent = nullptr);
     ~Battery();
-    double battery();
+    double level();
 
 signals:
     void batteryChanged();

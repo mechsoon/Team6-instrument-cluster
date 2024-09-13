@@ -99,7 +99,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSBatteryENDCLASS[] = {
     QMetaType::Void,
 
  // properties: name, type, flags
-       4, QMetaType::Int, 0x00015001, uint(0), 0,
+       4, QMetaType::Double, 0x00015001, uint(0), 0,
 
        0        // eod
 };
@@ -112,7 +112,7 @@ Q_CONSTINIT const QMetaObject Battery::staticMetaObject = { {
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSBatteryENDCLASS_t,
         // property 'level'
-        QtPrivate::TypeAndForceComplete<int, std::true_type>,
+        QtPrivate::TypeAndForceComplete<double, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Battery, std::true_type>,
         // method 'batteryChanged'
@@ -147,7 +147,7 @@ void Battery::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         (void)_t;
         void *_v = _a[0];
         switch (_id) {
-        case 0: *reinterpret_cast< int*>(_v) = _t->level(); break;
+        case 0: *reinterpret_cast< double*>(_v) = _t->level(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
