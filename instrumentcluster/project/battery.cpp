@@ -25,8 +25,9 @@ void Battery::onNewConnection(){
         int receivedInt = QString(data).toInt();
         m_battery=receivedInt;
         qDebug() << "Received integer:" << receivedInt;
+        emit batteryChanged();
     });
-    emit batteryChanged();
+    
 }
 
 Battery::~Battery(){}
