@@ -28,7 +28,18 @@ Item {
         }
 
 
-    Image { source: "qrc:/framefffinal.png" }
+    Image {
+        source: "qrc:/framefffinal.png"
+        Text {
+            id: speedText
+            text: speedController.speed + "cm/min"
+            anchors.top: parent.bottom
+            anchors.topMargin: -50
+            anchors.horizontalCenter: parent.horizontalCenter
+            font.pixelSize: 30
+            color: "#7C9392" // 글자 색상 설정
+        }
+    }
 
     Image {
         id: needle
@@ -74,7 +85,7 @@ Item {
         
         }
     }
-
+    
 
 
 

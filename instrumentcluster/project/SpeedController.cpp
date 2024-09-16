@@ -1,7 +1,7 @@
 #include "SpeedController.h"
 
 SpeedController::SpeedController(QObject *parent)
-    : QObject(parent), m_speed(-28) , canSocket(-1)
+    : QObject(parent), m_speed(0) , canSocket(-1)
 {
     setupCanInterface();
     timer=new QTimer(this);
