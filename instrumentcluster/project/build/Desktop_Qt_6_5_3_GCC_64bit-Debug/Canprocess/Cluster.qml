@@ -39,6 +39,14 @@ Item {
             font.pixelSize: 30
             color: "#7C9392" // 글자 색상 설정
         }
+        Text {
+            id: batteryText
+            text: "Battery: " + batterylevel.level + "%"
+            anchors.top: speedText.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            font.pixelSize: 30
+            color: "#7C9392" // 글자 색상 설정
+        }
     }
 
     Image {
@@ -85,6 +93,9 @@ Item {
         
         }
     }
+
+
+
     
 
 
