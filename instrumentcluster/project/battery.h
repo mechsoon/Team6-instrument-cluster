@@ -1,30 +1,37 @@
-#ifndef BATTERY_H
-#define BATTERY_H
-
 #include <QObject>
-#include <QTcpSocket>
-#include <QTcpServer>
-#include <QTimer>
 #include <QDebug>
-class Battery: public QObject
-{
+#include <fcntl.h>  // For open()
+#include <unistd.h> // For read() and write()
+#include <sys/ioctl.h> // For ioctl()
+#include <linux/i2c-dev.h> // For I2C definitions
+#include <QTimer>
+
+
+
+
+
+class I2CIna219 : public QObject {
     Q_OBJECT
     Q_PROPERTY(double level READ level NOTIFY batteryChanged)
+
 public:
-    explicit Battery(QObject *parent = nullptr);
-    ~Battery();
+    explicit I2CIna219(QObject *parent = nullptr);
+    ~I2CIna219();
+    bool initI2C();
+    void readBusVoltage();
     double level();
-
+    double get_battery_soc(double voltage);
 signals:
-    void batteryChanged();
-
-public slots:
-    void onNewConnection();
+        void batteryChanged();
 
 private:
-    QTcpServer *server;
-    double m_battery;
+    const char *device;
+    int ina219Address;
+    int busVoltageRegister;
+    int file;
+    double m_level;
     QTimer *timer;
-};
 
-#endif // BATTERY_H
+
+
+};

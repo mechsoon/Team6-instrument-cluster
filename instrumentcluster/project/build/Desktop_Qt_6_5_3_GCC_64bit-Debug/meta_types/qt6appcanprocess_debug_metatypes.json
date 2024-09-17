@@ -49,7 +49,7 @@
     {
         "classes": [
             {
-                "className": "Battery",
+                "className": "I2CIna219",
                 "object": true,
                 "properties": [
                     {
@@ -67,18 +67,11 @@
                         "user": false
                     }
                 ],
-                "qualifiedClassName": "Battery",
+                "qualifiedClassName": "I2CIna219",
                 "signals": [
                     {
                         "access": "public",
                         "name": "batteryChanged",
-                        "returnType": "void"
-                    }
-                ],
-                "slots": [
-                    {
-                        "access": "public",
-                        "name": "onNewConnection",
                         "returnType": "void"
                     }
                 ],

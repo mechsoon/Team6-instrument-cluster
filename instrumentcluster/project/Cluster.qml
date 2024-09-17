@@ -59,10 +59,10 @@ Item {
             origin.x: 115; origin.y: 5
             angle: -28
             Behavior on angle {
-                SpringAnimation {
-                    spring: 1.4
-                    damping: .15
-                }
+                // SpringAnimation {
+                //     spring: 1.4
+                //     damping: .15
+                // }
                 NumberAnimation {
                     duration: 50
                     easing.type: Easing.InOutQuad

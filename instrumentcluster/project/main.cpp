@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     SpeedController speedController;
-    Battery battery;
+    I2CIna219 battery;
     engine.rootContext()->setContextProperty("speedController", &speedController);
     engine.rootContext()->setContextProperty("batterylevel", &battery);
 
