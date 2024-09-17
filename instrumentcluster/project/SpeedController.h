@@ -35,7 +35,9 @@ public slots:
     
 private:
     int canSocket;
-    double m_speed;  
+    double m_speed;
+    double ema_speed;
+    double alpha;
     QTimer *timer;  
     void setupCanInterface(); 
 };
