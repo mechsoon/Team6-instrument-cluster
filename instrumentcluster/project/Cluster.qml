@@ -64,7 +64,7 @@ Item {
                     damping: .15
                 }
                 NumberAnimation {
-                    duration: 100
+                    duration: 50
                     easing.type: Easing.InOutQuad
                 }
             }
