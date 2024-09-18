@@ -41,7 +41,7 @@ jobs:
           echo 'Contents of /project/build after copy:' && \
           ls -la /project/build && \
           echo 'Checking for CMakeLists.txt in build directory:' && \
-          ls -l /project/build/src/ && \
+          ls -la /project/build/src/ && \
           cd build && \
           cmake . && \
           make && \
