@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-3ad3a936cc0c9a1ebf79.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "test_for_IC",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-401134fc0e2c09509b11.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-f08793442e071588ca79.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-e2881a086f3435475d2d.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-f4ba6f65e355c3604fec.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC-Debug-b140a149a911e4694942.json",
+					"name" : "apptest_for_IC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_autogen-Debug-2389842a183cc7c5b0d0.json",
+					"name" : "apptest_for_IC_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_autogen_timestamp_deps-Debug-c4330ff9dcd208599346.json",
+					"name" : "apptest_for_IC_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_qmlimportscan-Debug-84a1d51918819c28eb18.json",
+					"name" : "apptest_for_IC_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_qmllint-Debug-ae83cba02c83d8755475.json",
+					"name" : "apptest_for_IC_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_qmllint_json-Debug-00f0b550d6a5a3828d18.json",
+					"name" : "apptest_for_IC_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_qmllint_module-Debug-5c9fe9152223eb508f9d.json",
+					"name" : "apptest_for_IC_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_qmltyperegistration-Debug-0582bb3d9cdc8616aad6.json",
+					"name" : "apptest_for_IC_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptest_for_IC_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptest_for_IC_tooling-Debug-b8bfa293a56ab84162ec.json",
+					"name" : "apptest_for_IC_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/seame/team6/Team6-instrument-cluster/test_for_IC/build/Desktop_Qt_6_5_3_GCC_64bit-Debug",
+		"source" : "/home/seame/team6/Team6-instrument-cluster/test_for_IC"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

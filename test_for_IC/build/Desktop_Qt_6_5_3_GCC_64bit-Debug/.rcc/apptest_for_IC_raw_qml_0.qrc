@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/test_for_IC/">
+    <file alias="Main.qml">/home/seame/team6/Team6-instrument-cluster/test_for_IC/Main.qml</file>
+    <file alias="IC.pro">/home/seame/team6/Team6-instrument-cluster/test_for_IC/IC.pro</file>
+  </qresource>
+</RCC>
+
