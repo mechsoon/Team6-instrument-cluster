@@ -42,7 +42,7 @@ jobs:
           ls -la /project/build && \
           echo 'Checking for CMakeLists.txt in build directory:' && \
           ls -l /project/build/src/CMakeLists.txt && \
-          cd src/build && \
+          cd build && \
           cmake . && \
           make && \
           cp appCanprocess /project/
