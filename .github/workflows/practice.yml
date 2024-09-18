@@ -45,8 +45,8 @@ jobs:
           cd build && \
           cmake . && \
           make && \
-          cp InstrumentCluster /project/
-          ldd InstrumentCluster
+          cp appCanprocess /project/
+          ldd appCanprocess
         "
 
     - name: Upload build artifacts
