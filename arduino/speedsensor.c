@@ -5,6 +5,7 @@
 const int SPI_CS_PIN = 9;
 int encoder_pin = 3;  // The pin the encoder is connected           
 unsigned int rpm;     // rpm reading
+unsigned int speed;
 volatile byte pulses;  // number of pulses
 unsigned long timeold; 
 unsigned int pulsesperturn = 20;
@@ -42,19 +43,20 @@ void setup()
 
 
 void loop() {
-    if (millis() - timeold >= 1000){  /*Uptade every one second, this will be equal to reading frecuency (Hz).*/
+    if (millis() - timeold >= 300){  /*Uptade every one second, this will be equal to reading frecuency (Hz).*/
  
     //Don't process interrupts during calculations
     detachInterrupt(0);
     //Note that this would be 60*1000/(millis() - timeold)*pulses if the interrupt
     //happened once per revolution
-    rpm = (60 * 1000 / pulsesperturn )/ (millis() - timeold)* pulses;
+    rpm = (60 * 1000 / pulsesperturn )/ (millis() - timeold) * pulses ;
+    speed = rpm * 3.141592653589793238462643383279 * 2 * 3.3 /60; //cm 단위
     timeold = millis();
     pulses = 0;
    
     //Write it out to serial port
-    Serial.print("RPM = ");
-    Serial.println(rpm,DEC);
+    Serial.print("speed = ");
+    Serial.println(speed,DEC);
     //Restart the interrupt processing
     attachInterrupt(0, counter, FALLING);
     }
@@ -65,7 +67,9 @@ void loop() {
     // stmp[1] = (rpm >> 16) & 0xFF;
     // stmp[2] = (rpm >> 8) & 0xFF;
     // stmp[3] = rpm & 0xFF; 
-    stmp[0] = rpm  & 0xFF;  // 상위 8비트
+    stmp[0] = (speed>>8)  & 0xFF;  // 상위 8비트
+    stmp[1] = speed  & 0xFF;  // 상위 8비트
+
 
 
     // CAN 메시지 전송: ID 0x100, 데이터 길이 8, stmp 데이터
