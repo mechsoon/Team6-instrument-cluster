@@ -32,6 +32,7 @@ qt_add_resources(appCanprocess "resources"
         framefffinal.png
         needle.png
         needle_battery.png
+        low_battery.png
 
         
 )
