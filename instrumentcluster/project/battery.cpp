@@ -4,7 +4,7 @@ I2CIna219::I2CIna219(QObject *parent)
     : QObject(parent), device("/dev/i2c-1"), ina219Address(0x41), busVoltageRegister(0x02), file(-1),m_level(0) {
     initI2C();
     timer=new QTimer(this);
-    timer->start(60000);
+    timer->start(10000);
     // updated battery every 1min";
     connect(timer, &QTimer::timeout, this, &I2CIna219::readBusVoltage);
 }
