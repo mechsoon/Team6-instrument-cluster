@@ -4,8 +4,8 @@ I2CIna219::I2CIna219(QObject *parent)
     : QObject(parent), device("/dev/i2c-1"), ina219Address(0x41), busVoltageRegister(0x02), file(-1),m_level(0) {
     initI2C();
     timer=new QTimer(this);
-    timer->start(100);
-    // qDebug() << "Timer started, updating every 100ms";
+    timer->start(60000);
+    // updated battery every 1min";
     connect(timer, &QTimer::timeout, this, &I2CIna219::readBusVoltage);
 }
 
@@ -69,7 +69,7 @@ bool I2CIna219::initI2C() {
     return true;
 }
 
-double I2CIna219::level(){
+int I2CIna219::level(){
     return m_level;
 }
 
@@ -95,7 +95,7 @@ void I2CIna219::readBusVoltage() {
     int16_t rawVoltage = (buf[0] << 8) | buf[1];
     rawVoltage >>= 3;
     double busVoltage = rawVoltage * 0.004;
-    double voltage=get_battery_soc(busVoltage);
+    int voltage=get_battery_soc(busVoltage);
     m_level=voltage;
     emit batteryChanged();
 

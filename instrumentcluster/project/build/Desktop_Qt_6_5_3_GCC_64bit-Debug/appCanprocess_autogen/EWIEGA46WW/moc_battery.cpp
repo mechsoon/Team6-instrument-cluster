@@ -89,7 +89,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSI2CIna219ENDCLASS[] = {
     QMetaType::Void,
 
  // properties: name, type, flags
-       3, QMetaType::Double, 0x00015001, uint(0), 0,
+       3, QMetaType::Int, 0x00015001, uint(0), 0,
 
        0        // eod
 };
@@ -102,7 +102,7 @@ Q_CONSTINIT const QMetaObject I2CIna219::staticMetaObject = { {
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSI2CIna219ENDCLASS_t,
         // property 'level'
-        QtPrivate::TypeAndForceComplete<double, std::true_type>,
+        QtPrivate::TypeAndForceComplete<int, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<I2CIna219, std::true_type>,
         // method 'batteryChanged'
@@ -134,7 +134,7 @@ void I2CIna219::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         (void)_t;
         void *_v = _a[0];
         switch (_id) {
-        case 0: *reinterpret_cast< double*>(_v) = _t->level(); break;
+        case 0: *reinterpret_cast< int*>(_v) = _t->level(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {

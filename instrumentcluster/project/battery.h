@@ -12,14 +12,14 @@
 
 class I2CIna219 : public QObject {
     Q_OBJECT
-    Q_PROPERTY(double level READ level NOTIFY batteryChanged)
+    Q_PROPERTY(int level READ level NOTIFY batteryChanged)
 
 public:
     explicit I2CIna219(QObject *parent = nullptr);
     ~I2CIna219();
     bool initI2C();
     void readBusVoltage();
-    double level();
+    int level();
     double get_battery_soc(double voltage);
 signals:
         void batteryChanged();
@@ -29,7 +29,7 @@ private:
     int ina219Address;
     int busVoltageRegister;
     int file;
-    double m_level;
+    int m_level;
     QTimer *timer;
 
 
