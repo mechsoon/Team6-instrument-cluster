@@ -99,4 +99,9 @@ void I2CIna219::readBusVoltage() {
     m_level=voltage;
     emit batteryChanged();
 
+    if (busVoltage <= 10.8) {
+        emit lowBatteryWarning();
+    }
+
+
 }

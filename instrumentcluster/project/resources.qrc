@@ -7,7 +7,7 @@
         <file>framefffinal.png</file>
         <file>needle.png</file>
         <file>needle_battery.png</file>
-        <file>battery.png</file>
+        <file>low_battery.png</file>
 
 
     </qresource>
