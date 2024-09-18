@@ -2,6 +2,7 @@
 #define SPEEDCONTROLLER_H
 
 #include <QObject>
+#include <QTimer>
 #include <linux/can.h>
 #include <linux/can/raw.h>
 #include <sys/socket.h>
@@ -26,17 +27,32 @@ public:
 
     double speed() const;
 
+    // EMA 필터 활성화/비활성화 함수
+    Q_INVOKABLE void toggleEmaFilter(bool enabled);
+
+    // 칼만 필터 활성화/비활성화 함수
+    Q_INVOKABLE void toggleKalmanFilter(bool enabled);
+
 signals:
     void speedChanged();
 
-public slots:
-    void updateSpeed();  // 속도를 업데이트하는 함수
+private slots:
+    void updateSpeed();
 
 private:
+    void setupCanInterface();
+    double applyKalmanFilter(double measurement);  // 칼만 필터 함수
+
     int canSocket;
     double m_speed;
 
-    void setupCanInterface();  // CAN 인터페이스 설정 함수
+    // EMA 필터 관련 멤버 변수
+    double ema_speed;  // EMA 필터에 사용되는 속도 값
+    double alpha;  // EMA 필터의 알파 값
+    bool useEmaFilter;  // EMA 필터 활성화 여부
+
+    // 칼만 필터 관련 멤버 변수
+    bool useKalmanFilter;  // 칼만 필터 활성화 여부
 };
 
 #endif // SPEEDCONTROLLER_H
