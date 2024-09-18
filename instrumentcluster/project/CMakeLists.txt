@@ -22,6 +22,7 @@ qt_add_qml_module(appCanprocess
         RESOURCES resources.qrc
         RESOURCES
         SOURCES battery.h battery.cpp
+        SOURCES canreceiver.h canreceiver.cpp
 
 )
 qt_add_resources(appCanprocess "resources"

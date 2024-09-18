@@ -1,7 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include "SpeedController.h"
+#include "speedcontroller.h"
 
 int main(int argc, char *argv[])
 {
