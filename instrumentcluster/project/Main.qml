@@ -47,6 +47,7 @@ ApplicationWindow {
 
     Text {
         text: "Low_Battery WARNING!!"
+        visible: (batterylevel.level)<=10?true:false
         color: "red"
         font.pixelSize: 20
         anchors.horizontalCenter: low_battery1.horizontalCenter  // Image의 가로 중앙에 맞춤
@@ -67,6 +68,7 @@ ApplicationWindow {
 
     Text {
         text: "Low_Battery WARNING!!"
+        visible: (batterylevel.level)<=10?true:false
         color: "red"
         font.pixelSize: 20
         anchors.horizontalCenter: low_battery2.horizontalCenter  // Image의 가로 중앙에 맞춤

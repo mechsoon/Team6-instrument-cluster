@@ -1,7 +1,7 @@
 #include "SpeedController.h"
 
 SpeedController::SpeedController(QObject *parent)
-    : QObject(parent), m_speed(0), ema_speed(0), alpha(0.5), canSocket(-1)  // 초기 ema_speed 추가
+    : QObject(parent), m_speed(0), ema_speed(0), alpha(0.3), canSocket(-1)  // 초기 ema_speed 추가
 {
     setupCanInterface();
     timer = new QTimer(this);
@@ -16,7 +16,7 @@ SpeedController::~SpeedController() {
     }
 }
 
-double SpeedController::speed() const {
+int SpeedController::speed() const {
     return ema_speed;  // EMA 필터가 적용된 속도를 반환
 }
 

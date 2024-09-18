@@ -18,13 +18,13 @@
 class SpeedController : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(double speed READ speed NOTIFY speedChanged)
+    Q_PROPERTY(int speed READ speed NOTIFY speedChanged)
 
 public:
     explicit SpeedController(QObject *parent = nullptr);
     ~SpeedController();
 
-    double speed() const; 
+    int speed() const;
 
 signals:
     void speedChanged();
@@ -36,7 +36,7 @@ public slots:
 private:
     int canSocket;
     double m_speed;
-    double ema_speed;
+    int ema_speed;
     double alpha;
     QTimer *timer;  
     void setupCanInterface(); 
