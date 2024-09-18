@@ -1100,6 +1100,12 @@
 			"MU",
 			"EWIEGA46WW/moc_canreceiver.cpp",
 			null
+		],
+		[
+			"/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/speedcontrol.h",
+			"MU",
+			"EWIEGA46WW/moc_speedcontrol.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1211,6 +1217,11 @@
 		],
 		[
 			"/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/speedcontrol.cpp",
 			"MU",
 			null
 		]
