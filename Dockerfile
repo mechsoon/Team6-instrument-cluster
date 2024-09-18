@@ -190,7 +190,6 @@ RUN { \
     python3 sysroot-relativelinks.py /build/sysroot && \
     mkdir -p qt6 qt6/host qt6/pi qt6/host-build qt6/pi-build qt6/src && \
     cd qt6/src && \
-    wget https://download.qt.io/official_releases/qt/6.6/6.6.3/submodules/qtserialbus-everywhere-src-6.6.3.tar.xz && \
     wget https://download.qt.io/official_releases/qt/6.6/6.6.3/submodules/qtbase-everywhere-src-6.6.3.tar.xz && \
     wget https://download.qt.io/official_releases/qt/6.6/6.6.3/submodules/qtshadertools-everywhere-src-6.6.3.tar.xz && \
     wget https://download.qt.io/official_releases/qt/6.6/6.6.3/submodules/qtdeclarative-everywhere-src-6.6.3.tar.xz && \
@@ -198,7 +197,6 @@ RUN { \
     tar xf ../src/qtbase-everywhere-src-6.6.3.tar.xz && \
     tar xf ../src/qtshadertools-everywhere-src-6.6.3.tar.xz && \
     tar xf ../src/qtdeclarative-everywhere-src-6.6.3.tar.xz && \
-    tar xf ../src/qtserialbus-everywhere-src-6.6.3.tar.xz && \
     echo "Compile qtbase for host" && \
     cd qtbase-everywhere-src-6.6.3 && \
     cmake -GNinja -DCMAKE_BUILD_TYPE=Release \
@@ -214,11 +212,6 @@ RUN { \
     cmake --install . && \
     echo "Compile declerative for host" && \
     cd ../qtdeclarative-everywhere-src-6.6.3 && \
-    /build/qt6/host/bin/qt-configure-module . && \
-    cmake --build . --parallel 4 && \
-    cmake --install . && \
-    echo "Compile Qt SerialBus for host" && \
-    cd ../qtserialbus-everywhere-src-6.6.3 && \
     /build/qt6/host/bin/qt-configure-module . && \
     cmake --build . --parallel 4 && \
     cmake --install . && \
