@@ -1,4 +1,4 @@
-#include "SpeedController.h"
+#include "SpeedController2.h"
 
 SpeedController::SpeedController(QObject *parent)
     : QObject(parent), m_speed(0), filteredSpeed(0), canSocket(-1), emaEnabled(false), kalmanEnabled(false)

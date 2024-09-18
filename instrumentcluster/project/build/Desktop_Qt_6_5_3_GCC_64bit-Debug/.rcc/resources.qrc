@@ -1,10 +1,10 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="Main.qml">/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/Main.qml</file>
-    <file alias="Cluster.qml">/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/Cluster.qml</file>
-    <file alias="framefffinal.png">/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/framefffinal.png</file>
-    <file alias="needle.png">/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/needle.png</file>
-    <file alias="needle_battery.png">/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/needle_battery.png</file>
+    <file alias="Main.qml">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/Main.qml</file>
+    <file alias="Cluster.qml">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/Cluster.qml</file>
+    <file alias="framefffinal.png">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/framefffinal.png</file>
+    <file alias="needle.png">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/needle.png</file>
+    <file alias="needle_battery.png">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/needle_battery.png</file>
   </qresource>
 </RCC>
 

@@ -2,6 +2,75 @@
     {
         "classes": [
             {
+                "className": "SpeedController",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "speed",
+                        "notify": "speedChanged",
+                        "read": "speed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "SpeedController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "speedChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "name": "updateSpeed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "enableEMA",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "enableKalman",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SpeedController2.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
                 "className": "I2CIna219",
                 "object": true,
                 "properties": [
@@ -37,96 +106,6 @@
             }
         ],
         "inputFile": "battery.h",
-        "outputRevision": 68
-    },
-    {
-        "classes": [
-            {
-                "className": "CanReceiver",
-                "object": true,
-                "qualifiedClassName": "CanReceiver",
-                "signals": [
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "speed",
-                                "type": "double"
-                            }
-                        ],
-                        "name": "speedUpdated",
-                        "returnType": "void"
-                    }
-                ],
-                "slots": [
-                    {
-                        "access": "public",
-                        "name": "processCanFrame",
-                        "returnType": "void"
-                    }
-                ],
-                "superClasses": [
-                    {
-                        "access": "public",
-                        "name": "QObject"
-                    }
-                ]
-            }
-        ],
-        "inputFile": "canreceiver.h",
-        "outputRevision": 68
-    },
-    {
-        "classes": [
-            {
-                "className": "SpeedController",
-                "object": true,
-                "properties": [
-                    {
-                        "constant": false,
-                        "designable": true,
-                        "final": false,
-                        "index": 0,
-                        "name": "speed",
-                        "notify": "speedChanged",
-                        "read": "speed",
-                        "required": false,
-                        "scriptable": true,
-                        "stored": true,
-                        "type": "double",
-                        "user": false
-                    }
-                ],
-                "qualifiedClassName": "SpeedController",
-                "signals": [
-                    {
-                        "access": "public",
-                        "name": "speedChanged",
-                        "returnType": "void"
-                    }
-                ],
-                "slots": [
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "speed",
-                                "type": "double"
-                            }
-                        ],
-                        "name": "handleSpeedUpdate",
-                        "returnType": "void"
-                    }
-                ],
-                "superClasses": [
-                    {
-                        "access": "public",
-                        "name": "QObject"
-                    }
-                ]
-            }
-        ],
-        "inputFile": "speedcontrol.h",
         "outputRevision": 68
     }
 ]

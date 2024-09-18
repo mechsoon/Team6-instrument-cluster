@@ -1,5 +1,5 @@
 -rootPath
-/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project
+/home/seame/team6/Team6-instrument-cluster/test_for_IC2
 -cmake-output
 -output-file
 /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appCanprocess.cmake

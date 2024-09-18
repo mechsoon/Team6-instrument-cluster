@@ -1,4 +1,4 @@
-# Install script for directory: /home/seame/team6/Team6-instrument-cluster/instrumentcluster/project
+# Install script for directory: /home/seame/team6/Team6-instrument-cluster/test_for_IC2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
