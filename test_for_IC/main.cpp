@@ -1,7 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include "speedcontroller.h"
+#include "SpeedController.h"
 
 int main(int argc, char *argv[])
 {
@@ -9,19 +9,19 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    // SpeedController 객체 생성 및 QML에 등록
+    // SpeedController 객체 생성
     SpeedController speedController;
+
+    // SpeedController 객체를 QML에 등록
     engine.rootContext()->setContextProperty("speedController", &speedController);
 
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-
-    if (engine.rootObjects().isEmpty())
-        return -1;
-
-    // CAN 데이터를 주기적으로 업데이트하는 타이머 설정
-    QTimer timer;
-    QObject::connect(&timer, &QTimer::timeout, &speedController, &SpeedController::updateSpeed);
-    timer.start(1000);  // 1초마다 업데이트
+    const QUrl url(QStringLiteral("qrc:/Main.qml"));
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
+                     &app, [url](QObject *obj, const QUrl &objUrl) {
+        if (!obj && url == objUrl)
+            QCoreApplication::exit(-1);
+    }, Qt::QueuedConnection);
+    engine.load(url);
 
     return app.exec();
 }
