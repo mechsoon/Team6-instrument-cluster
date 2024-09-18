@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Canprocess/">
-    <file alias="Main.qml">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/Main.qml</file>
-    <file alias="Cluster.qml">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/Cluster.qml</file>
-    <file alias="resources.qrc">/home/seame/team6/Team6-instrument-cluster/test_for_IC2/resources.qrc</file>
-  </qresource>
-</RCC>
-
