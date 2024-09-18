@@ -94,54 +94,6 @@ Item {
         }
     }
 
-    // 배터리 경고가 발생했을 때 이미지와 텍스트를 표시하는 변수
-    property bool lowBattery: false
 
-    // 배터리 전압이 낮을 때 호출되는 함수
-    function showLowBatteryWarning() {
-        lowBattery = true;
-    }
-
-    Image {
-        id: low_battery1
-        visible: lowBattery
-        x: 123; y: 200
-        antialiasing: true
-        source: "qrc:/low_battery.png"
-        anchors.right: parent.left
-    }
-
-    Text {
-        text: "Low_Battery WARNING!!"
-        color: "red"
-        font.pixelSize: 20
-        anchors.horizontalCenter: low_battery1.horizontalCenter  // Image의 가로 중앙에 맞춤
-        anchors.top: low_battery1.bottom  // Image의 아래쪽에 배치
-        anchors.topMargin: 10  // Image와 Text 사이의 간격을 조정
-    }
-
-    Image {
-        id: low_battery2
-        visible: lowBattery
-        x: 1157; y: 200
-        antialiasing: true
-        source: "qrc:/low_battery.png"
-    }
-
-    Text {
-        text: "Low_Battery WARNING!!"
-        color: "red"
-        font.pixelSize: 20
-        anchors.horizontalCenter: low_battery2.horizontalCenter  // Image의 가로 중앙에 맞춤
-        anchors.top: low_battery2.bottom  // Image의 아래쪽에 배치
-        anchors.topMargin: 10  // Image와 Text 사이의 간격을 조정
-    }
-
-    Connections {
-        target: batterylevel  // C++ 객체를 QML로 전달받는 객체
-        onLowBatteryWarning: {
-            showLowBatteryWarning()
-        }
-    }
 }
 
