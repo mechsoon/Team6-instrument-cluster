@@ -1069,6 +1069,50 @@
 		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickTargets-relwithdebinfo.cmake",
 		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickAdditionalTargetInfo.cmake",
 		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6Quick/Qt6QuickVersionlessTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusConfigVersion.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusConfigVersionImpl.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusConfig.cmake",
+		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusDependencies.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersion.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersionImpl.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfig.cmake",
+		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortDependencies.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortTargets-relwithdebinfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortAdditionalTargetInfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortVersionlessTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusTargets-relwithdebinfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusAdditionalTargetInfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusVersionlessTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SerialBusPlugins.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginConfig.cmake",
+		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginTargets-relwithdebinfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginAdditionalTargetInfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginConfig.cmake",
+		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginTargets-relwithdebinfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginAdditionalTargetInfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SocketCanBusPluginConfig.cmake",
+		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SocketCanBusPluginTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SocketCanBusPluginTargets-relwithdebinfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6SocketCanBusPluginAdditionalTargetInfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginConfig.cmake",
+		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginTargets-relwithdebinfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginAdditionalTargetInfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginConfig.cmake",
+		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginTargets.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginTargets-relwithdebinfo.cmake",
+		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginAdditionalTargetInfo.cmake",
 		"/home/seame/Qt/Tools/CMake/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
 		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
@@ -1083,12 +1127,6 @@
 	"DEP_FILE_RULE_NAME" : "appCanprocess_autogen/timestamp",
 	"HEADERS" : 
 	[
-		[
-			"/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/SpeedController.h",
-			"MU",
-			"EWIEGA46WW/moc_SpeedController.cpp",
-			null
-		],
 		[
 			"/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/battery.h",
 			"MU",
@@ -1121,7 +1159,9 @@
 		"QT_QMLINTEGRATION_LIB",
 		"QT_QMLMODELS_LIB",
 		"QT_QML_LIB",
-		"QT_QUICK_LIB"
+		"QT_QUICK_LIB",
+		"QT_SERIALBUS_LIB",
+		"QT_SERIALPORT_LIB"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -1148,6 +1188,8 @@
 		"/home/seame/Qt/6.5.3/gcc_64/include/QtQmlModels",
 		"/home/seame/Qt/6.5.3/gcc_64/include/QtOpenGL",
 		"/home/seame/Qt/6.5.3/gcc_64/include/QtDBus",
+		"/home/seame/Qt/6.5.3/gcc_64/include/QtSerialBus",
+		"/home/seame/Qt/6.5.3/gcc_64/include/QtSerialPort",
 		"/usr/include",
 		"/usr/include/c++/11",
 		"/usr/include/x86_64-linux-gnu/c++/11",
@@ -1195,11 +1237,6 @@
 	"SETTINGS_FILE" : "/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/CMakeFiles/appCanprocess_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/SpeedController.cpp",
-			"MU",
-			null
-		],
 		[
 			"/home/seame/team6/Team6-instrument-cluster/instrumentcluster/project/battery.cpp",
 			"MU",

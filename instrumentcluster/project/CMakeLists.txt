@@ -4,7 +4,7 @@ project(Canprocess VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick DBus)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick DBus SerialBus)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -17,7 +17,7 @@ qt_add_qml_module(appCanprocess
     VERSION 1.0
     QML_FILES
         Main.qml
-        SOURCES SpeedController.h SpeedController.cpp
+        # SOURCES SpeedController.h SpeedController.cpp
         QML_FILES Cluster.qml 
         RESOURCES resources.qrc
         RESOURCES
@@ -49,7 +49,7 @@ set_target_properties(appCanprocess PROPERTIES
 )
 
 target_link_libraries(appCanprocess
-    PRIVATE Qt6::Quick Qt6::DBus
+    PRIVATE Qt6::Quick Qt6::DBus Qt6::SerialBus
 )
 
 

@@ -2,11 +2,27 @@
 #define CANRECEIVER_H
 
 #include <QObject>
+#include <QtSerialBus/QCanBus>
+#include <QtSerialBus/QCanBusDevice>
+#include <QDebug>
 
-class CanReceiver
+class CanReceiver : public QObject
 {
+    Q_OBJECT
+
 public:
-    CanReceiver();
+    explicit CanReceiver(QObject *parent = nullptr);
+    ~CanReceiver();
+
+signals:
+    void speedUpdated(double speed);
+
+public slots:
+    void processCanFrame();
+
+private:
+    QCanBusDevice *canDevice;
+    void setupCanInterface();
 };
 
-#endif // CANRECEIVER_H
+#endif // CANWORKER_H

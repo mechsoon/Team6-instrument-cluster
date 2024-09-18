@@ -379,6 +379,12 @@ Qt6Qml_DIR:PATH=/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6Qml
 //The directory containing a CMake configuration file for Qt6Quick.
 Qt6Quick_DIR:PATH=/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6Quick
 
+//The directory containing a CMake configuration file for Qt6SerialBus.
+Qt6SerialBus_DIR:PATH=/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialBus
+
+//The directory containing a CMake configuration file for Qt6SerialPort.
+Qt6SerialPort_DIR:PATH=/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6SerialPort
+
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=/home/seame/Qt/6.5.3/gcc_64/lib/cmake/Qt6
 
@@ -962,6 +968,8 @@ QT_FEATURE_mimetype_database:INTERNAL=ON
 QT_FEATURE_mips_dsp:INTERNAL=OFF
 //Qt feature: mips_dspr2 (from target Qt6::Core)
 QT_FEATURE_mips_dspr2:INTERNAL=OFF
+//Qt feature: modbus_serialport (from target Qt6::SerialBus)
+QT_FEATURE_modbus_serialport:INTERNAL=ON
 //Qt feature: movie (from target Qt6::Gui)
 QT_FEATURE_movie:INTERNAL=ON
 //Qt feature: mtdev (from target Qt6::Gui)
@@ -982,6 +990,8 @@ QT_FEATURE_networklistmanager:INTERNAL=OFF
 QT_FEATURE_networkproxy:INTERNAL=ON
 //Qt feature: no_direct_extern_access (from target Qt6::Core)
 QT_FEATURE_no_direct_extern_access:INTERNAL=OFF
+//Qt feature: ntddmodm (from target Qt6::SerialPort)
+QT_FEATURE_ntddmodm:INTERNAL=OFF
 //Qt feature: ocsp (from target Qt6::Network)
 QT_FEATURE_ocsp:INTERNAL=ON
 //Qt feature: opengl (from target Qt6::Gui)
@@ -1166,6 +1176,10 @@ QT_FEATURE_signaling_nan:INTERNAL=ON
 QT_FEATURE_simulator_and_device:INTERNAL=OFF
 //Qt feature: slog2 (from target Qt6::Core)
 QT_FEATURE_slog2:INTERNAL=OFF
+//Qt feature: socketcan (from target Qt6::SerialBus)
+QT_FEATURE_socketcan:INTERNAL=ON
+//Qt feature: socketcan_fd (from target Qt6::SerialBus)
+QT_FEATURE_socketcan_fd:INTERNAL=ON
 //Qt feature: socks5 (from target Qt6::Network)
 QT_FEATURE_socks5:INTERNAL=ON
 //Qt feature: sortfilterproxymodel (from target Qt6::Core)
