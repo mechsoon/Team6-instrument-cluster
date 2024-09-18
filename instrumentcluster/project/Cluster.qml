@@ -32,7 +32,7 @@ Item {
         source: "qrc:/framefffinal.png"
         Text {
             id: speedText
-            text: speedController.speed + "cm/min"
+            text: speedController.speed + "cm/s"
             anchors.top: parent.bottom
             anchors.topMargin: -50
             anchors.horizontalCenter: parent.horizontalCenter
