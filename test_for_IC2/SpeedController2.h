@@ -1,5 +1,5 @@
-#ifndef SPEEDCONTROLLER_H
-#define SPEEDCONTROLLER_H
+#ifndef SPEEDCONTROLLER2_H
+#define SPEEDCONTROLLER2_H
 
 #include <QObject>
 #include <linux/can.h>
