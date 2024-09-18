@@ -7,29 +7,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find the necessary Qt5 components
 find_package(Qt5 5.15 REQUIRED COMPONENTS Quick DBus SerialBus)
 
-# Setup the project with standard Qt5 configurations
-# (Qt5 doesn't have qt_standard_project_setup, so skip or use manual setup)
-# qt_standard_project_setup(REQUIRES 5.15)
-
-# Define the executable for the project
-qt5_add_executable(appCanprocess
+# Define the executable for the project (use add_executable instead of qt5_add_executable)
+add_executable(appCanprocess
     main.cpp
+    battery.cpp battery.h
+    canreceiver.cpp canreceiver.h
+    speedcontrol.cpp speedcontrol.h
 )
 
 # Define the QML module and resources
-qt5_add_qml_module(appCanprocess
-    URI Canprocess
-    VERSION 1.0
-    QML_FILES
-        Main.qml
-        Cluster.qml 
-    RESOURCES resources.qrc
-    SOURCES
-        battery.h battery.cpp
-        canreceiver.h canreceiver.cpp
-        speedcontrol.h speedcontrol.cpp
-)
-
 qt5_add_resources(appCanprocess "resources"
     PREFIX "/"
     FILES
