@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>Cluster.qml</file>
+        
+    </qresource>
+    <qresource prefix="/images">
+        <file>framefffinal.png</file>
+        <file>needle.png</file>
+        <file>needle_battery.png</file>
+    
+
+
+    </qresource>
+</RCC>
