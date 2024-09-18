@@ -108,6 +108,7 @@ Item {
         x: 123; y: 200
         antialiasing: true
         source: "qrc:/low_battery.png"
+        anchors.right: parent.left
     }
 
     Text {

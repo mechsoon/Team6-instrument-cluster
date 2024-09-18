@@ -13,6 +13,7 @@
 class I2CIna219 : public QObject {
     Q_OBJECT
     Q_PROPERTY(int level READ level NOTIFY batteryChanged)
+    Q_PROPERTY(NOTIFY lowBatteryWarning )
 
 public:
     explicit I2CIna219(QObject *parent = nullptr);
@@ -23,7 +24,8 @@ public:
     double get_battery_soc(double voltage);
 signals:
         void batteryChanged();
-
+signals:
+        void lowBatteryWarning();
 private:
     const char *device;
     int ina219Address;

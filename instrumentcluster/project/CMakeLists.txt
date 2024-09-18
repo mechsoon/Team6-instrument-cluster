@@ -36,6 +36,7 @@ qt_add_resources(appCanprocess "resources"
 
         
 )
+
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
