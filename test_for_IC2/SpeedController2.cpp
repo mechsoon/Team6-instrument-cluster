@@ -88,7 +88,7 @@ void SpeedController::updateSpeed()
 
 double SpeedController::applyEMA(double newSpeed)
 {
-    const double alpha = 0.1;
+    const double alpha = 0.3;
     filteredSpeed = alpha * newSpeed + (1 - alpha) * filteredSpeed;
     return filteredSpeed;
 }
