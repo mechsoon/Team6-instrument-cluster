@@ -15,7 +15,7 @@ Item {
     Connections {
             target: speedController
             onSpeedChanged: {
-                needleRotation.angle=speedController.speed-28;
+                needleRotation.angle=(speedController.speed * 1.3111) - 28;
             }
         }
     Connections {
