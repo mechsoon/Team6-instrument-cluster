@@ -3,7 +3,7 @@ name: Build Project with Prebuilt Docker Image
 on:
   push:
     branches:
-      - main
+      - final
   pull_request:
     branches:
       - main
@@ -23,11 +23,11 @@ jobs:
       uses: docker/setup-buildx-action@v2
 
     - name: Pull Docker image
-      run: docker pull sejokim/qt_cross:latest
+      run: docker pull --platform linux/arm64 mechsoon/raspimage:v1
 
     - name: Ensure correct capitalization of CMakeLists.txt
       run: |
-        docker run --rm --platform linux/arm64 -v ${{ github.workspace }}:/project -w /project sejokim/qt_cross:latest /bin/bash -c "
+        docker run --rm --platform linux/arm64 -v ${{ github.workspace }}:/project -w /project mechsoon/raspimage:v1 /bin/bash -c "
           if [ -f /project/CmakeLists.txt ]; then
             mv /project/CmakeLists.txt /project/CMakeLists.txt
           fi
@@ -35,14 +35,14 @@ jobs:
 
     - name: Build project inside Docker container
       run: |
-        docker run --rm --platform linux/arm64 -v ${{ github.workspace }}:/project -w /project sejokim/qt_cross:latest /bin/bash -c "
+        docker run --rm --platform linux/arm64 -v ${{ github.workspace }}:/project -w /project mechsoon/raspimage:v1 /bin/bash -c "
           mkdir -p build && \
           find /project -mindepth 1 -maxdepth 1 ! -name build -exec cp -r {} build/ \; && \
           echo 'Contents of /project/build after copy:' && \
           ls -la /project/build && \
           echo 'Checking for CMakeLists.txt in build directory:' && \
-          ls -la /project/build/src/ && \
-          cd /project/build/src/ && \
+          ls -l /project/build/CMakeLists.txt && \
+          cd build && \
           cmake . && \
           make && \
           cp appCanprocess /project/
@@ -53,4 +53,8 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: build-artifacts
-        path: build/appCanprocess
+        path: |
+          build/appCanprocess
+          build/instrument/*.qml
+          
+
