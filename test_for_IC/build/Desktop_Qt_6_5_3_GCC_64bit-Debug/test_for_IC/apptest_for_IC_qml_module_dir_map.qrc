@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/qt/qml/test_for_IC">/home/seame/team6/Team6-instrument-cluster/test_for_IC/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/test_for_IC</file>
-
-  </qresource>
-</RCC>
