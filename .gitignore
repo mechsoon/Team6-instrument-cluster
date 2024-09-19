@@ -1,0 +1,38 @@
+# CMake build directory and files
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+.DS_Store
+
+# VSCode settings
+.vscode/*
+
+# Compiled object files, binaries, libraries
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+
+# Temporary files and editor swap files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Debug and profiling files
+*.dSYM/
+*.prof
+*.gcda
+*.gcno
+*.gcov
+
+# Install and distribution directories
+install/
+dist/
