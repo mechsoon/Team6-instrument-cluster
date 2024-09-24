@@ -1,0 +1,21 @@
+.
+├── CMakeLists.txt
+├── src
+│   ├── battery.cpp
+│   ├── battery.h
+│   ├── battery.png
+│   ├── Cluster.qml
+│   ├── framefffinal.png
+│   ├── low_battery.png
+│   ├── main.cpp
+│   ├── Main.qml
+│   ├── needle_battery.png
+│   ├── needle.png
+│   ├── resources.qrc
+│   ├── SpeedContoller+EMA.cpp
+│   ├── SpeedController.cpp
+│   ├── SpeedController.h
+└── └── SpeedController_KF.cpp
+
+
+5 directories, 30 files
