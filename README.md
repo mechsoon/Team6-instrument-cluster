@@ -8,6 +8,14 @@
   - [Module Descriptions](#Module-Descriptions)
   - [Installation and Usage](#Installation-and-Usage)
 
+## Contributor
+
+
+| NAME   | ROLE                  | GitHub                      | LinkedIn                                | Email              |
+|--------|-----------------------|-----------------------------|-----------------------------------------|---------------------|
+| Soonwoong | Software Engineer | [GitHub profile](https://github.com/mechsoon) | [LinkedIn](https://www.linkedin.com/in/Sunung/) | ksw5190@gmail.com |
+| Seungjoo  | GUI Developer      | [GitHub profile](https://github.com/programerKim)  | [LinkedIn](https://www.linkedin.com/in/Jisoo/)  | kimseungjue@gmail.com |
+| Kunho | Hardware Developer          | [GitHub profile](https://github.com/Minjae) | [LinkedIn](https://www.linkedin.com/in/Minjae/) | minjae@example.com |
 
 ## Introduction
 
