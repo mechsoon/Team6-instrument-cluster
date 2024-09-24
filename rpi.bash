@@ -52,12 +52,12 @@ unzip -o $TMP_DIR/${ARTIFACT_NAME}.zip -d $DOWNLOAD_DIR
 echo "Contents of $DOWNLOAD_DIR:"
 ls -la $DOWNLOAD_DIR
 
-# Set execute permission for InstrumentCluster
-if [ -f "$DOWNLOAD_DIR/InstrumentCluster" ]; then
-  chmod +x $DOWNLOAD_DIR/InstrumentCluster
-  echo "Execute permission set for InstrumentCluster"
+# Set execute permission for appCanprocess
+if [ -f "$DOWNLOAD_DIR/appCanprocess" ]; then
+  chmod +x $DOWNLOAD_DIR/appCanprocess
+  echo "Execute permission set for appCanprocess"
 else
-  echo "Warning: InstrumentCluster executable not found in the artifacts."
+  echo "Warning: appCanprocess executable not found in the artifacts."
 fi
 
 # Check for QML files
