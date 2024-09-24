@@ -48,8 +48,7 @@ The PiRacer instrument cluster Qt application project is aimed at creating a rea
 
 ## System Architecture
 
-[Speed Sensor] -> [Arduino UNO] -> [Arduino CAN Shield] -> [CAN Bus] -> [Raspberry Pi] -> [Raspberry Pi CAN HAT] -> [Qt Application]
-[I2C Battery Module] -> [Raspberry Pi] -> [Qt Application]
+<img src="images/architecture.png" alt="architecture" width="250">
 
 ## Module Descriptions
 
