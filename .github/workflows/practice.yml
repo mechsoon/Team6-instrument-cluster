@@ -55,6 +55,6 @@ jobs:
         name: build-artifacts
         path: |
           build/appCanprocess
-          build/instrument/*.qml
+          build/src/*.qml
           
 
