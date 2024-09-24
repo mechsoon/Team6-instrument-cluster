@@ -80,7 +80,7 @@ The software design of the PiRacer instrument cluster application is designed to
 
 Tested on the following Hardware:
 
-- Raspberry Pi 4 Model B 4GB
+- Raspberry Pi 4 Model B 8GB
 
 Tested on the following distributions:
 
@@ -151,7 +151,30 @@ Host machine has X86-64 architecture and Raspberry Pi has ARM CPUs. To run the p
 Our workflows is [Action yml](.github/workflows/practice.yml)
 ```bash
 how to use our workflow
-1. simply push your project
+
+1. simply push your project to main branch
+2. CMakeLists.txt should be out of your project file
+
+├── CMakeLists.txt
+├── src
+│   ├── battery.cpp
+│   ├── battery.h
+│   ├── battery.png
+│   ├── Cluster.qml
+│   ├── framefffinal.png
+│   ├── low_battery.png
+│   ├── main.cpp
+│   ├── Main.qml
+│   ├── needle_battery.png
+│   ├── needle.png
+│   ├── resources.qrc
+│   ├── SpeedContoller+EMA.cpp
+│   ├── SpeedController.cpp
+│   ├── SpeedController.h
+└── └── SpeedController_KF.cpp
+3. if you use other version of QT, you need to modify Dockerimage.
+4. Receive Artifacts which contatins crosscompiled program, *.qml with bash script on Raspberry-pi  
+
 ```
 
 
