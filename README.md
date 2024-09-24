@@ -6,7 +6,7 @@
   - [Project Goals and Objectives](#project-goals-and-objectives)
   - [Technical Requirements](#technical-requirements)
   - [Software Design](#software-design)
-  - [Implementation](#implementation)
+  - [Installation and Usage](#Installation-and-Usage)
   - [Project Timeline](#project-timeline)
   - [Collaboration and Teamwork](#collaboration-and-teamwork)
   - [Results](#results)
@@ -76,15 +76,29 @@ The software design of the PiRacer instrument cluster application is designed to
 </br>
 
 
-## Implementation
+## Installation and Usage
 
-The implementation of the PiRacer instrument cluster application involves several key steps, including writing the code for the various components, testing the code, and deploying the application on the Raspberry Pi.
+Tested on the following Hardware:
 
-1. Writing the code: The first step in the implementation process is writing the code for the various components of the application. This includes writing the code for the main application, the CAN communication module, and the display module. The code should be written in a clear and organized manner, making use of best practices in software engineering.
-2. Testing the code: After writing the code, it is important to test it to ensure that it works correctly and meets the technical requirements. This can be done by running the code on the Raspberry Pi and verifying that it correctly receives speed data from the speed sensor and displays it on the screen.
-3. Deploying the application: Once the code has been tested and verified, the application can be deployed on the Raspberry Pi. This involves copying the code to the Raspberry Pi and executing it. The Raspberry Pi should be configured to boot up and run the application automatically upon startup.
+- Raspberry Pi 4 Model B 4GB
 
-The implementation process should be carefully planned and executed to ensure that the final product meets the technical requirements and provides a user-friendly interface for monitoring the speed of the vehicle. The implementation process should also be carefully documented, so that any future modifications or updates to the application can be made easily.
+Tested on the following distributions:
+
+- Raspberry Pi OS Lite "Bookworm (64-Bit)
+- Ubuntu Server 20.04.5 LTS (64-Bit)
+
+## Piracer setup 
+
+```bash
+$ cd ~
+$ mkdir piracer_test/
+$ cd piracer_test/
+$ python3 -m venv venv
+$ source venv/bin/activate     //activate virtualenvironment   
+
+$ pip install piracer-py
+
+```
 </br>
 
 
