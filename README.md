@@ -47,8 +47,7 @@ The PiRacer instrument cluster Qt application project is aimed at creating a rea
 
 
 ## System Architecture
-
-<img src="images/architecture.png" alt="architecture" width="250">
+<p align="center"><img src="images/architecture.png" alt="architecture" width=" 450"></p>
 
 ## Module Descriptions
 
