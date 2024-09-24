@@ -3,7 +3,7 @@ name: Build Project with Prebuilt Docker Image
 on:
   push:
     branches:
-      - final
+      - main
   pull_request:
     branches:
       - main
