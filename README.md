@@ -76,7 +76,7 @@ The software design of the PiRacer instrument cluster application is designed to
 </br>
 
 
-## - Installation and Usage
+##  Installation and Usage
 
 Tested on the following Hardware:
 
@@ -87,7 +87,7 @@ Tested on the following distributions:
 - Raspberry Pi OS Lite "Bookworm (64-Bit)
 - Ubuntu Server 20.04.5 LTS (64-Bit)
 
-## - Piracer setup 
+## Piracer setup 
 
 ```bash
 $ cd ~
@@ -101,7 +101,7 @@ $ pip install piracer-py
 ```
 
 
-## - Raspberry Pi Setup
+## Raspberry Pi Setup
 - CAN configuration
 ```bash
  $ sudo vim /boot/firmware/config.txt
@@ -138,7 +138,7 @@ dtoverlay=vc4-kms-dsi-waveshare-panel,7_9_inch
 ```
 </br>
 
-## -Docker with CICD 
+## Docker with CICD 
 
 Host machine has X86-64 architecture and Raspberry Pi has ARM CPUs. To run the program on Rpi which compiled by host machine, we need to make an environment for crosscompile.
 
@@ -174,7 +174,15 @@ how to use our workflow
 └── └── SpeedController_KF.cpp
 3. if you use other version of QT, you need to modify Dockerimage.
 4. Receive Artifacts which contatins crosscompiled program, *.qml with bash script on Raspberry-pi  
-
+```
+```bash
+# how to run the code on Rpi
+# open the crontab using following line
+$ crontab -e
+# bash file will be execute every 5 minutes when you use following line
+$ */5 * * * * /path/to/example.sh
+# check the status of cron file
+$ crontab -l
 ```
 
 
@@ -183,8 +191,7 @@ how to use our workflow
 
 
 
-
-## Project Timeline
+## DEMO
 
 The PiRacer Instrument Cluster Qt Application project is expected to take approximately 6-8 weeks to complete, with the following estimated timeline:
 
