@@ -138,6 +138,28 @@ dtoverlay=vc4-kms-dsi-waveshare-panel,7_9_inch
 ```
 </br>
 
+## -Docker with CICD 
+
+Host machine has X86-64 architecture and Raspberry Pi has ARM CPUs. To run the program on Rpi which compiled by host machine, we need to make an environment for crosscompile.
+
+### requirements
+- above QT 6 version
+- QEMU
+- Docker BUILDX
+- Docker image (mechsoon/raspimage:v1)
+
+Our workflows is [Action yml](.github/workflows/practice.yml)
+```bash
+how to use our workflow
+1. simply push your project
+```
+
+
+
+
+
+
+
 
 ## Project Timeline
 
