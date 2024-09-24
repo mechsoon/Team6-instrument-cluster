@@ -129,7 +129,7 @@ dtoverlay=vc4-kms-dsi-waveshare-panel,7_9_inch
 ```
 </br>
 
-## Docker with CICD 
+## Docker with CI/CD 
 
 Host machine has X86-64 architecture and Raspberry Pi has ARM CPUs. To run the program on Rpi which compiled by host machine, we need to make an environment for crosscompile.
 
@@ -182,25 +182,8 @@ $ crontab -l
 
 
 
-## DEMO
+## DEMO(To be continued)
 
-The PiRacer Instrument Cluster Qt Application project is expected to take approximately 6-8 weeks to complete, with the following estimated timeline:
-
-* Week 1-2:
-  * Research and familiarization with the CAN bus protocol, speed sensors, and Qt.
-  * Design of the system architecture and software design.
-
-* Week 3-4:
-  * Implementation of the Qt-based GUI for the instrument cluster.
-  * Integration of the speed sensor with the Raspberry Pi using the CAN bus protocol.
-
-* Week 5-6:
-  * Testing and debugging of the instrument cluster.
-  * Verification of real-time speed data display on the instrument cluster GUI.
-
-* Week 7-8:
-  * Final documentation and report writing, including a detailed explanation of the system architecture, software design, implementation, results, and conclusions.
-  * Preparation for final presentation and demonstration.
 </br>
 
 
