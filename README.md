@@ -76,7 +76,7 @@ The software design of the PiRacer instrument cluster application is designed to
 </br>
 
 
-## Installation and Usage
+## - Installation and Usage
 
 Tested on the following Hardware:
 
@@ -87,7 +87,7 @@ Tested on the following distributions:
 - Raspberry Pi OS Lite "Bookworm (64-Bit)
 - Ubuntu Server 20.04.5 LTS (64-Bit)
 
-## Piracer setup 
+## - Piracer setup 
 
 ```bash
 $ cd ~
@@ -98,6 +98,43 @@ $ source venv/bin/activate     //activate virtualenvironment
 
 $ pip install piracer-py
 
+```
+
+
+## - Raspberry Pi Setup
+- CAN configuration
+```bash
+ $ sudo vim /boot/firmware/config.txt
+ add the following line to the end of the config.txt file
+ $ dtoverlay=seeed-can-fd-hat-v1 
+```
+you need to check your CAN-HAT version
+
+- how to activate CAN
+```bash
+$ apt-get install can-utils
+$ sudo ip link set can0 up type can bitrate 500000
+$ candump can0
+```
+
+- How to enable I2C
+```bash
+$ sudo raspi-config (select Interfacing Options)
+$ Enable I2C
+$ reboot
+```
+How to check which I2C port we are using
+```bash
+$ i2cdetect -y 1
+```
+If you want to use Display, add following line to the end of config.txt file. 
+[reference for LCD](https://www.waveshare.com/wiki/7.9inch_DSI_LCD)
+```bash
+dtoverlay=vc4-kms-v3d
+#DSI1 Use
+dtoverlay=vc4-kms-dsi-waveshare-panel,7_9_inch
+#DSI0 Use
+#dtoverlay=vc4-kms-dsi-waveshare-panel,7_9_inch,dsi0
 ```
 </br>
 
