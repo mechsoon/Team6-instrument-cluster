@@ -36,12 +36,15 @@ The PiRacer instrument cluster Qt application project is aimed at creating a rea
 - I2C Communication(Bonus part): Receiving battery data by using I2c Communication. Next, visualize it.
 ## Hardware Components
 
-- **Ardunio UNO**
-- **CAN-BUS Shield V2.0** (seeed studio) or **MCP2515**
-- **Raspberry Pi 4** Model B 8GB RAM
-- **CAN-BUS (FD) HAT for Raspberry Pi** (seeed studio**)
-- **speed sensor(LM393)**
-- Pi Racer
+| **Components**                                     | **image**                                                  |
+|----------------------------------------------|-------------------------------------------------------------|
+| **Arduino UNO**                              | <img src="images/arduino.png" alt="Arduino UNO" width="250"> |
+| **CAN-BUS Shield V2.0** (Seeed Studio) or **MCP2515** | <img src="images/image.png" alt="CAN-BUS Shield" width="250">|
+| **Raspberry Pi 4** Model B 8GB RAM           | <img src="images/raspberrypi.png" alt="Raspberry Pi 4" width="250"> |
+| **CAN-BUS (FD) HAT for Raspberry Pi** (Seeed Studio) | <img src="images/canhat.png" alt="CAN-BUS HAT" width="250">  |
+| **Speed Sensor (LM393)**                     | <img src="images/lm393.png" alt="Speed Sensor" width="250">  |
+| **Pi Racer**                                 | <img src="images/piracer.png" alt="Pi Racer" width="250">    |
+
 
 ## System Architecture
 
