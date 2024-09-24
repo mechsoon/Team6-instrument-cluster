@@ -9,30 +9,34 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Quick DBus)
 qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appCanprocess
-    main.cpp
+    src/main.cpp
 )
 
 qt_add_qml_module(appCanprocess
     URI Canprocess
     VERSION 1.0
     QML_FILES
-        Main.qml
-        SOURCES SpeedController.h SpeedContoller+EMA.cpp
-        QML_FILES Cluster.qml 
-        RESOURCES resources.qrc
+        src/Main.qml
+        SOURCES 
+        src/SpeedController.h src/SpeedContoller+EMA.cpp
+        QML_FILES 
+        src/Cluster.qml 
+        RESOURCES 
+        src/resources.qrc
         RESOURCES
-        SOURCES battery.h battery.cpp
+        SOURCES 
+        src/battery.h src/battery.cpp
 
 )
 qt_add_resources(appCanprocess "resources"
     PREFIX "/"
     FILES
-        Main.qml
-        Cluster.qml
-        framefffinal.png
-        needle.png
-        needle_battery.png
-        low_battery.png
+        src/Main.qml
+        src/Cluster.qml
+        src/framefffinal.png
+        src/needle.png
+        src/needle_battery.png
+        src/low_battery.png
 
         
 )
