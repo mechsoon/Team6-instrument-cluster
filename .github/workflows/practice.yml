@@ -1,0 +1,60 @@
+name: Build Project with Prebuilt Docker Image
+
+on:
+  push:
+    branches:
+      - final
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Pull Docker image
+      run: docker pull --platform linux/arm64 mechsoon/raspimage:v1
+
+    - name: Ensure correct capitalization of CMakeLists.txt
+      run: |
+        docker run --rm --platform linux/arm64 -v ${{ github.workspace }}:/project -w /project mechsoon/raspimage:v1 /bin/bash -c "
+          if [ -f /project/CmakeLists.txt ]; then
+            mv /project/CmakeLists.txt /project/CMakeLists.txt
+          fi
+        "
+
+    - name: Build project inside Docker container
+      run: |
+        docker run --rm --platform linux/arm64 -v ${{ github.workspace }}:/project -w /project mechsoon/raspimage:v1 /bin/bash -c "
+          mkdir -p build && \
+          find /project -mindepth 1 -maxdepth 1 ! -name build -exec cp -r {} build/ \; && \
+          echo 'Contents of /project/build after copy:' && \
+          ls -la /project/build && \
+          echo 'Checking for CMakeLists.txt in build directory:' && \
+          ls -l /project/build/CMakeLists.txt && \
+          cd build && \
+          cmake . && \
+          make && \
+          cp appCanprocess /project/
+          ldd appCanprocess
+        "
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-artifacts
+        path: |
+          build/appCanprocess
+          build/instrument/*.qml
+          
+
