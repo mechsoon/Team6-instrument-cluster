@@ -181,9 +181,19 @@ $ crontab -l
 
 
 
-
-## DEMO(To be continued)
-
+## DEMO
+<div align="center">
+<video width="320" height="240" controls>
+  <source src="images/battery.mp4" type="video/mp4">
+</video>
+</div>
 </br>
+
+
+<div align="center">
+  <video width="320" height="240" controls style="transform: rotate(-90deg);">
+    <source src="images/piracer.mp4" type="video/mp4">
+  </video>
+</div>
 
 
